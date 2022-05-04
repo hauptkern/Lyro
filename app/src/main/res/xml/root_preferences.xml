@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/appearance_header">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_preference_1"
+            android:title="@string/dark_mode" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_header">
+
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/appinfo_text"
+            app:selectable="false" />
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="edit_text_preference_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/contact"
+            app:selectable="false" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
